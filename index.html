@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row w-75 m-auto pt-5">
+            <label for="productNameInput">productName</label>
+            <input type="text" id="productNameInput" class=" form-control mb-3">
+            <label for="productPriceInput">productPrice</label>
+            <input type="number" id="productPriceInput" class=" form-control mb-3">
+            <label for="productCategoryInput">productCategory</label>
+            <input type="text" id="productCategoryInput" class=" form-control mb-3">
+            <label for="productDescInput">productDesc</label>
+            <input type="text" id="productDescInput" class=" form-control mb-3">
+            <button onclick="addProduct()" class=" btn btn-outline-info w-25" id="btnform">Add Product</button>
+            <button onclick="udpateProduct()" class=" btn btn-outline-warning d-none w-25" id="btnUpdate">Update Product
+            </button>
+        </div>
+        <div class="searchTerm w-75 m-auto my-3">
+            <input oninput='search(this.value)' type="text" name="" id="searchTermInput" class="form-control"
+                placeholder="search...">
+        </div>
+
+        <div class="row">
+            <table class="table w-75 m-auto my-5 text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Desc</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="rowData">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
